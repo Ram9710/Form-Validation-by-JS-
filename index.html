@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Create Account</h2>
+    </div>
+    <form id="form" class="form" onsubmit="return validation()" name="submit-to-google-sheet" >
+      <div class="form-control">
+        <label for="username">Username</label>
+        <input type="text" name="Name" placeholder="Username" id="username" />
+  <span id="error"></span>
+      </div>
+      <div class="form-control">
+        <label for="Email">Email</label>
+        <input type="text" name="Malid" placeholder="Mail-id" id="email" />
+ <span id="mailerror"></span>
+      </div>
+      <div class="form-control">
+        <label for="Password">Password</label>
+        <input type="password" name="Password" placeholder="Password" id="password" />
+        <span id="passerror"></span>
+      </div>
+      <div class="form-control">
+        <label for="Location">Location</label>
+        <input type="text"  name="Location"placeholder="location" id="location" />
+        <span id="locerror"></span>
+      </div>
+      <div class="form-control">
+        <label for="Number">Mobile No:</label>
+        <input type="number" name="Mobile no" placeholder="number" id="number" />
+        <span id="numerror"></span>
+      </div>
+
+      <div class="form-control">
+        <label for="Gender" name="Gender" id="gender">Gender</label>
+        <div class="gender">
+          <input type="radio" name="Male" placeholder="" /><label>Male</label>
+          <input type="radio" name="Male" placeholder="" /><label>Female</label>
+        </div>
+      </div>
+      <button>Submit</button>
+      <button type="button" class="reset" onclick="resetForm()" >Reset</button>
+    </form>
+  </div>
+
+  <script src="js.js">
+
+
+
+  </script>
+</body>
+
+</html>
